@@ -1,5 +1,6 @@
 # git aliases
 alias g='git'
+alias glog='git log --oneline'
 alias stat='git status'
 alias gc='git checkout @{-1}'
 alias addall='git add --all && git status'
@@ -19,8 +20,13 @@ alias gri4='git rebase --interactive HEAD~4'
 alias gri5='git rebase --interactive HEAD~5'
 alias grc='git rebase --continue'
 alias gra='git rebase --abort'
+alias grm='git rebase master'
+alias grim='git rebase --interactive master'
 
 alias am='git commit --amend -m'
+alias addam='git add --all && git commit --amend -m'
+alias addam!='git add --all && git commit --amend --no-edit'
+alias amend='git commit --amend'
 alias amend!='git commit --amend --no-edit'
 
 # directory listings
