@@ -11,7 +11,8 @@ fi
 # Set nano to default command line editor
 export EDITOR=/usr/bin/nano
 
-PS1='\h:\W \u\$ '
+export PS1='\[\033[0;47;30m\]#\!\[\033[0;43;91m\]:\[\033[0;101;31m\]\W/\[\033[1;41;91m\]\$\[\033[0;0m\] '
+export PS4='::>'
 # Make bash check its window size after a process completes
 shopt -s checkwinsize
 
