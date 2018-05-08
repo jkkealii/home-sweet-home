@@ -34,3 +34,8 @@ alias amend!='git commit --amend --no-edit'
 alias ll='ls -lF -G'
 alias la='ls -alF -G'
 alias ls='ls -F'
+
+# back it up
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
