@@ -2,6 +2,7 @@
 alias g='git'
 alias glog='git log --oneline'
 alias glg='git log --date-order --all --graph --format="%C(green)%h%Creset %C(yellow)%an%Creset %C(blue bold)%ar%Creset %C(red bold)%d%Creset%s"'
+alias branch='git branch -a'
 alias stat='git status'
 alias gc='git checkout @{-1}'
 alias addall='git add --all && git status'
