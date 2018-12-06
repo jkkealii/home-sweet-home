@@ -11,7 +11,9 @@ fi
 # Set nano to default command line editor
 export EDITOR=/usr/bin/nano
 
-export PS1='\[\033[0;47;30m\]#\!\[\033[0;43;91m\]:\[\033[0;101;31m\]\W/\[\033[1;41;91m\]\$\[\033[0;0m\] '
+source /Library/Developer/CommandLineTools/usr/share/git-core/git-prompt.sh
+
+export PS1="\[\033[0;47;30m\]#\!\[\033[0;43;91m\]:\[\033[0;101;31m\]\W/\[\033[1;41;91m\]\$\[\033[0;0m\]\[\033[32m\]\$(__git_ps1)\[\033[00m\] "
 export PS4='::>'
 # Make bash check its window size after a process completes
 shopt -s checkwinsize
