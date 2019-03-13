@@ -1,5 +1,6 @@
 # git alias, rest contained in .gitconfig
 alias g='git'
+alias prune='git remote prune origin'
 
 # directory listings
 alias ll='ls -lF -G'

@@ -34,12 +34,11 @@
   cm = commit -m
   addcm = !git add --all && git commit -m
   fetch = fetch -tpP
-  prune = remote prune origin
 	pop = stash pop
 	list = stash list
 	show = stash show
   unstage = reset HEAD --
-  pushnew = git push -u origin HEAD
+  pushnew = push -u origin HEAD
   pushf = push --force
 
   cpc = !git checkout master && git pull && git checkout @{-1}
