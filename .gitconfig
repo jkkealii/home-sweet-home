@@ -21,7 +21,7 @@
 	changed = yellow
 	untracked = red dim
 [alias]
-  aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort | less -F
+  aliases = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\ \t => \\2/' | sort | less
   lgo = log --oneline
   br = branch -a
   brv = branch -av
@@ -53,8 +53,8 @@
   rm = rebase master
   rim = rebase --interactive master
 
-  amm = commit --amend -m
+  camm = commit --amend -m
   addam = !git add --all && git commit --amend -m
   addne = !git add --all && git commit --amend --no-edit
-  am = commit --amend
-  amne = git commit --amend --no-edit
+  cam = commit --amend
+  camne = git commit --amend --no-edit
