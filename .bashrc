@@ -18,16 +18,8 @@ export PS4='::>'
 # Make bash check its window size after a process completes
 shopt -s checkwinsize
 
-# For Karma testing
-export FIREFOX_BIN=/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox-bin
-
 # added by travis gem
 [ -f /Users/lemonjello/.travis/travis.sh ] && source /Users/lemonjello/.travis/travis.sh
-
-# pyenv
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
