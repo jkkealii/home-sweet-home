@@ -1,5 +1,5 @@
 [user]
-	name = Josh Kuroda
+	name = Josh Dapkus
 	email = dev@lemonjello.cc
 [color]
 	branch = auto
@@ -38,7 +38,7 @@
 	show = stash show
   unstage = reset HEAD --
   pushnew = push -u origin HEAD
-  pushf = push --force
+  pushf = push --force-with-lease
 
   cpc = !git checkout master && git pull && git checkout @{-1}
   cpcr = !git checkout master && git pull && git checkout @{-1} && git rebase master
@@ -48,9 +48,9 @@
   ri3 = rebase --interactive HEAD~3
   ri4 = rebase --interactive HEAD~4
   ri5 = rebase --interactive HEAD~5
-  rc = rebase --continue
-  ra = rebase --abort
-  rm = rebase master
+  rec = rebase --continue
+  rea = rebase --abort
+  rem = rebase master
   rim = rebase --interactive master
 
   camm = commit --amend -m
