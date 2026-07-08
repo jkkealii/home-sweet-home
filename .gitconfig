@@ -57,4 +57,4 @@
   addam = !git add --all && git commit --amend -m
   addne = !git add --all && git commit --amend --no-edit
   cam = commit --amend
-  camne = git commit --amend --no-edit
+  camne = !git commit --amend --no-edit
